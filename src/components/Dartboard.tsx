@@ -1,14 +1,9 @@
 type DartboardProps = {
-	// Later we can add props here
+  // Later we can add props here
 };
 
 function Dartboard(_props: DartboardProps) {
-	return (
-		<section>
-			<h1>Dartboard</h1>
-			<p>Here you will work with a visual dartboard layout.</p>
-		</section>
-	);
+  return <div style={{ width: '100%', fontSize: '1.1rem' }}>score:</div>;
 }
 
 export default Dartboard;
