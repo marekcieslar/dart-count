@@ -60,7 +60,16 @@ const Numbers: FC = () => {
   // Obsługa 25 i 50
   const handleSpecial = (num: number) => {
     if (isDisabled) return;
-    setThrows([...throws, { label: `${num}`, value: num }]);
+    let label = '';
+    let value = num;
+    if (num === 50) {
+      label = 'D25(50)';
+      value = 50;
+    } else {
+      label = `${num}`;
+      value = num;
+    }
+    setThrows([...throws, { label, value }]);
     setSelectedType('single');
   };
 
