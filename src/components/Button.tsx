@@ -1,22 +1,33 @@
 import React from 'react';
+import styles from './Button.module.css';
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
   style?: React.CSSProperties;
+  typeColor?: 'red' | 'black' | 'green' | 'beige';
 };
 
-function Button({ children, style, ...rest }: ButtonProps) {
+function Button({ children, style, typeColor, ...rest }: ButtonProps) {
+  let colorClass = styles.default;
+  switch (typeColor) {
+    case 'red':
+      colorClass = styles.red;
+      break;
+    case 'black':
+      colorClass = styles.black;
+      break;
+    case 'green':
+      colorClass = styles.green;
+      break;
+    case 'beige':
+      colorClass = styles.beige;
+      break;
+    default:
+      colorClass = styles.default;
+  }
+  const className = [styles.button, colorClass].join(' ');
   return (
-    <button
-      style={{
-        width: '100%',
-        height: '100%',
-        fontSize: '1.1rem',
-        padding: 0,
-        ...style,
-      }}
-      {...rest}
-    >
+    <button className={className} style={style} {...rest}>
       {children}
     </button>
   );
