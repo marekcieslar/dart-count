@@ -23,7 +23,6 @@ const Numbers: FC = () => {
       >
         score:
       </div>
-      {/* ...możliwe inne elementy... */}
       <div
         style={{
           position: 'fixed',
@@ -42,6 +41,10 @@ const Numbers: FC = () => {
           justifyContent: 'flex-end',
         }}
       >
+        <div style={{ display: 'flex', gap: '2px', height: rowHeight }}>
+          <Button>clear</Button>
+          <Button>{'<-'}</Button>
+        </div>
         <div style={{ display: 'flex', gap: '2px', height: rowHeight }}>
           <Button>single</Button>
           <Button>double</Button>
