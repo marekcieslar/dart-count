@@ -21,6 +21,12 @@
   transition: all 0.12s;
 }
 
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .default {
   background: #bdbdbd;
   color: #222;

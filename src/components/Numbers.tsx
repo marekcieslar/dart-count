@@ -137,22 +137,10 @@ const Numbers: FC = () => {
         }}
       >
         <div style={{ display: 'flex', gap: '2px', height: rowHeight }}>
-          <Button
-            onClick={handleClear}
-            disabled={throws.length === 0}
-            style={
-              throws.length === 0 ? { background: '#eee', color: '#888' } : {}
-            }
-          >
+          <Button onClick={handleClear} disabled={throws.length === 0}>
             clear
           </Button>
-          <Button
-            onClick={handleUndo}
-            disabled={throws.length === 0}
-            style={
-              throws.length === 0 ? { background: '#eee', color: '#888' } : {}
-            }
-          >
+          <Button onClick={handleUndo} disabled={throws.length === 0}>
             {'<-'}
           </Button>
         </div>
@@ -168,7 +156,6 @@ const Numbers: FC = () => {
             typeColor={selectedType === 'single' ? 'red' : 'beige'}
             onClick={() => setSelectedType('single')}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             single
           </Button>
@@ -176,7 +163,6 @@ const Numbers: FC = () => {
             typeColor={selectedType === 'double' ? 'red' : 'beige'}
             onClick={() => setSelectedType('double')}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             double
           </Button>
@@ -184,24 +170,18 @@ const Numbers: FC = () => {
             typeColor={selectedType === 'tripple' ? 'red' : 'beige'}
             onClick={() => setSelectedType('tripple')}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             tripple
           </Button>
         </div>
         <div style={{ display: 'flex', gap: '2px', height: rowHeight }}>
-          <Button
-            onClick={handleMiss}
-            disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
-          >
+          <Button onClick={handleMiss} disabled={isDisabled}>
             Miss
           </Button>
           <Button
             typeColor="green"
             onClick={() => handleSpecial(25)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             25
           </Button>
@@ -209,7 +189,6 @@ const Numbers: FC = () => {
             typeColor="red"
             onClick={() => handleSpecial(50)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             Bull
           </Button>
@@ -219,7 +198,6 @@ const Numbers: FC = () => {
             typeColor="beige"
             onClick={() => handleValueClick(1)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             1
           </Button>
@@ -227,7 +205,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(2)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             2
           </Button>
@@ -235,7 +212,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(3)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             3
           </Button>
@@ -243,7 +219,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(4)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             4
           </Button>
@@ -251,7 +226,6 @@ const Numbers: FC = () => {
             typeColor="beige"
             onClick={() => handleValueClick(5)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             5
           </Button>
@@ -261,7 +235,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(6)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             6
           </Button>
@@ -269,7 +242,6 @@ const Numbers: FC = () => {
             typeColor="beige"
             onClick={() => handleValueClick(7)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             7
           </Button>
@@ -277,7 +249,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(8)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             8
           </Button>
@@ -285,7 +256,6 @@ const Numbers: FC = () => {
             typeColor="beige"
             onClick={() => handleValueClick(9)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             9
           </Button>
@@ -293,7 +263,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(10)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             10
           </Button>
@@ -303,7 +272,6 @@ const Numbers: FC = () => {
             typeColor="beige"
             onClick={() => handleValueClick(11)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             11
           </Button>
@@ -311,7 +279,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(12)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             12
           </Button>
@@ -319,7 +286,6 @@ const Numbers: FC = () => {
             typeColor="beige"
             onClick={() => handleValueClick(13)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             13
           </Button>
@@ -327,7 +293,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(14)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             14
           </Button>
@@ -335,7 +300,6 @@ const Numbers: FC = () => {
             typeColor="beige"
             onClick={() => handleValueClick(15)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             15
           </Button>
@@ -345,7 +309,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(16)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             16
           </Button>
@@ -353,7 +316,6 @@ const Numbers: FC = () => {
             typeColor="beige"
             onClick={() => handleValueClick(17)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             17
           </Button>
@@ -361,7 +323,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(18)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             18
           </Button>
@@ -369,7 +330,6 @@ const Numbers: FC = () => {
             typeColor="beige"
             onClick={() => handleValueClick(19)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             19
           </Button>
@@ -377,7 +337,6 @@ const Numbers: FC = () => {
             typeColor="black"
             onClick={() => handleValueClick(20)}
             disabled={isDisabled}
-            style={isDisabled ? { background: '#eee', color: '#888' } : {}}
           >
             20
           </Button>

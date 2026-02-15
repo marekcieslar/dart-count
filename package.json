@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host --port 3001",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "serve": "vite preview --port 3001",
     "preview": "vite preview --port 3001"

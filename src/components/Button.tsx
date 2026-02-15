@@ -25,7 +25,10 @@ function Button({ children, style, typeColor, ...rest }: ButtonProps) {
     default:
       colorClass = styles.default;
   }
-  const className = [styles.button, colorClass].join(' ');
+  const disabledClass = rest.disabled ? styles.disabled : '';
+  const className = [styles.button, colorClass, disabledClass]
+    .filter(Boolean)
+    .join(' ');
   return (
     <button className={className} style={style} {...rest}>
       {children}
