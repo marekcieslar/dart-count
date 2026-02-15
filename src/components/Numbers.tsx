@@ -1,11 +1,7 @@
+import type { FC } from 'react';
 import Button from './Button';
 
-type NumbersProps = {
-  // Later we can add props here
-};
-
-function Numbers(_props: NumbersProps) {
-  // Stałe wysokości elementów nad buttonami
+const Numbers: FC = () => {
   const ROWS = 6;
   const headerHeight = 40;
   const margin = 16;
@@ -87,6 +83,6 @@ function Numbers(_props: NumbersProps) {
       </div>
     </div>
   );
-}
+};
 
 export default Numbers;

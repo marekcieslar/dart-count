@@ -1,9 +1,7 @@
-type DartboardProps = {
-  // Later we can add props here
-};
+import type { FC } from 'react';
 
-function Dartboard(_props: DartboardProps) {
+const Dartboard: FC = () => {
   return <div style={{ width: '100%', fontSize: '1.1rem' }}>score:</div>;
-}
+};
 
 export default Dartboard;
